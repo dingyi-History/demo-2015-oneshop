@@ -3,8 +3,8 @@ package dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import entity.GoodEntity;
-import entity.TypeEntity;
+import Model.GoodEntity;
+import Model.TypeEntity;
 
 public interface  GoodDao {
 	

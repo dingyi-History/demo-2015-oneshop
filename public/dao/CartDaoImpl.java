@@ -3,10 +3,10 @@ package dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import Model.CartEntity;
+import Model.GoodEntity;
+import Model.UserEntity;
 import conndb.BaseDao;
-import entity.CartEntity;
-import entity.GoodEntity;
-import entity.UserEntity;
 
 public class CartDaoImpl implements CartDao {
 

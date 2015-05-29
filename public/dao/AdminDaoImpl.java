@@ -4,8 +4,8 @@ package dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import Model.AdminEntity;
 import conndb.BaseDao;
-import entity.AdminEntity;
 
 
 
@@ -24,10 +24,10 @@ public class AdminDaoImpl extends BaseDao implements AdminDao {
 	}
 
 	// 查询对应管理员数据的方法(做注册防用户名重叠用)，为保证用户名唯一性
-	public ResultSet seladminexist(AdminEntity admin) throws SQLException {
+	public int seladminexist(AdminEntity admin) throws SQLException {
 		// 先来定义一句查询语句
 		SQL = "SELECT * FROM shop_sys  WHERE sysName=?";
-		return baseDao.rs(SQL, new String[]{admin.getSysName()});
+		return baseDao.num(SQL, new String[]{admin.getSysName()});
 	}
 
 	// 添加管理员方法
@@ -50,7 +50,7 @@ public class AdminDaoImpl extends BaseDao implements AdminDao {
 		return baseDao.num(SQL, new String[]{admin.getSysPwd(),admin.getSysName()});
 	}
 
-	// 查询所以管理员返回结果
+	// 查询所有管理员返回结果
 	public ResultSet alladmin() throws SQLException {
 		SQL="SELECT *FROM shop_sys";
 		return baseDao.rs(SQL,null);

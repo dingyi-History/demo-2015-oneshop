@@ -3,9 +3,9 @@ package dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import entity.GoodEntity;
-import entity.OrderEntity;
-import entity.UserEntity;
+import Model.GoodEntity;
+import Model.OrderEntity;
+import Model.UserEntity;
 
 public interface OrderDao {
 	

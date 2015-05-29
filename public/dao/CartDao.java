@@ -2,9 +2,9 @@ package dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import entity.CartEntity;
-import entity.GoodEntity;
-import entity.UserEntity;
+import Model.CartEntity;
+import Model.GoodEntity;
+import Model.UserEntity;
 
 public interface CartDao {
 	

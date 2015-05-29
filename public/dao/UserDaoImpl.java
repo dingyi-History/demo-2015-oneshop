@@ -3,8 +3,8 @@ package dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import Model.UserEntity;
 import conndb.BaseDao;
-import entity.UserEntity;
 
 public class UserDaoImpl implements UserDao {
 

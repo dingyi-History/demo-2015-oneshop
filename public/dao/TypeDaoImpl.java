@@ -3,8 +3,8 @@ package dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import Model.TypeEntity;
 import conndb.BaseDao;
-import entity.TypeEntity;
 
 
 public class TypeDaoImpl implements TypeDao {

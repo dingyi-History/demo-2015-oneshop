@@ -3,7 +3,7 @@ package dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import entity.TypeEntity;
+import Model.TypeEntity;
 
 public interface TypeDao {
 

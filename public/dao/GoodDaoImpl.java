@@ -3,9 +3,9 @@ package dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import Model.GoodEntity;
+import Model.TypeEntity;
 import conndb.BaseDao;
-import entity.GoodEntity;
-import entity.TypeEntity;
 
 
 

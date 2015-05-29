@@ -3,10 +3,10 @@ package dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import Model.GoodEntity;
+import Model.OrderEntity;
+import Model.UserEntity;
 import conndb.BaseDao;
-import entity.GoodEntity;
-import entity.OrderEntity;
-import entity.UserEntity;
 
 public class OrderDaoImpl implements OrderDao {
 	String sql =null;
